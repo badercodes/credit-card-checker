@@ -97,5 +97,15 @@ const idInvalidCardCompanies = (invalidCardsArr) => {
   return finalCompanies;
 };
 
+// testing
 console.log(idInvalidCardCompanies(findInvalidCards(batch)));
 console.log(findInvalidCards(batch));
+
+// challenge
+const convertString = (str) => {
+  return Array.from(str, Number);
+};
+randomCard = convertString("5248716005063161");
+console.log(validateCred(randomCard));
+console.log(typeof randomCard[0]);
+console.log(randomCard);
